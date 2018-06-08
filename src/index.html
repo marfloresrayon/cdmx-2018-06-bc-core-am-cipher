@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <!--Metadata. Para el browser-->
+   <title>Caesar Cipher</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <!--Mensaje de bienvenida para la usuaria-->
+   <h1>Bienvenida al Cifrado César</h1>
+   <!--Input donde la usuaria ingresará el mensaje que desea cifrar-->
+   <input type='text' id='mensaje' placeholder='Ingresa tu mensaje'> </input>
+   <!--Input donde la usuaria ingresará el offset que usará mi función de cifrado-->
+   <input id='offsetvalor' placeholder='Ingresa el offset deseado'> </input>
+   <!--Botón que hará que la "magia" suceda. Función cifrar-->
+   <button onclick='cifrar()'>Cifrar</button>
+   <!--Section donde se imprimirá el mensaje cifrado que ingresó la usuaria-->
+   <section id='mensajeFinal'></section>
+   <div id="root"></div>
+   <script src="cipher.js"></script>
+   <script src="index.js"></script>
+ </body>
 </html>
+
+
+
+
